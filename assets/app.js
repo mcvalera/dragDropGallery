@@ -1,43 +1,43 @@
 // uploaded images in assets/images folder for convenience
-
+// having the images within an array in the JSON is better because it allows you to at least predict the order in which the images will be in when parsed, although given my implementation right now the order doesn't really matter
 var imgList = [
- {
+  {
     src: 'http://i68.tinypic.com/mbn5t1.jpg',
     desc: 'close up of a dandelion'
   },
- {
+  {
     src: 'http://i66.tinypic.com/htefld.png',
     desc: 'misty lake'
   },
- {
+  {
     src: 'http://i67.tinypic.com/be61iu.png',
     desc: 'fox peeking behind a tree'
   },
- {
+  {
     src: 'http://i67.tinypic.com/ortqow.png',
     desc: 'little house on the water'
   },
- {
+  {
     src: 'http://i67.tinypic.com/2dqvzw7.png',
     desc: 'industrial glass'
   },
- {
+  {
     src: 'http://i65.tinypic.com/2wob21i.png',
     desc: 'tall, grand building'
   },
- {
+  {
     src: 'http://i65.tinypic.com/10i6yki.png',
     desc: 'solitary tree in winter'
   },
- {
+  {
     src: 'http://i66.tinypic.com/jgk5mg.png',
     desc: 'rock formation'
   },
- {
+  {
     src: 'http://i65.tinypic.com/20it3ci.png',
     desc: 'woman gazing into the water'
   },
- {
+  {
     src: 'http://i68.tinypic.com/168zor5.png',
     desc: 'sea cliff'
   },
