@@ -23,13 +23,6 @@ function dragHandler(e) {
   if (e.target.className == 'image-container') {
     e.preventDefault();
     e.dataTransfer.dropEffect = 'move';
-    // var id = e.target.id;
-    // var arr = [];
-    // if (arr.indexOf(id) < 0) {
-    //   console.log(id);
-    //   arr.push(id);
-    // }
-
   }
 
 }

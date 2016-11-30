@@ -1,3 +1,5 @@
+// uploaded images in assets/images folder for convenience
+
 var imgList = [
  {
     src: 'http://i68.tinypic.com/mbn5t1.jpg',
@@ -55,6 +57,7 @@ var imgList = [
   var galleryContainer = document.getElementById('gallery-container');
 
   function Gallery(numImgs) {
+
     this.numImages = _numImages();
     this.createGrid = function() {
       var num = this.numImages;
@@ -75,7 +78,6 @@ var imgList = [
       return tmpl;
     }
 
-    // return this;
   };
 
   // Img class is unnecessary given that all we have is src and desc, but if we were to scale the application, having a class might be useful
@@ -86,7 +88,6 @@ var imgList = [
 
   var gallery = new Gallery();
   gallery.createGrid();
-  console.log(gallery);
 
 })();
 
