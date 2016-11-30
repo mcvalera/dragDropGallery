@@ -12,11 +12,22 @@ function dropHandler(e) {
   var parent = el.parentNode;
   var target = e.target;
 
-  if (el.offsetTop < target.offsetTop || el.offsetLeft < target.offsetLeft) {
+  if (el.offsetTop < target.offsetTop ) {
+    // console.log('insertAfter');
     parent.insertBefore(el, target.nextSibling);
+  } else if (el.offsetTop == target.offsetTop) {
+    if (el.offsetLeft < target.offsetLeft) {
+      // console.log('insertAfter');
+      parent.insertBefore(el, target.nextSibling);
+    } else {
+      // console.log('insertBefore');
+      parent.insertBefore(el, target);
+    }
   } else {
+    // console.log('insertBefore');
     parent.insertBefore(el, target);
   }
+
 }
 
 function dragHandler(e) {

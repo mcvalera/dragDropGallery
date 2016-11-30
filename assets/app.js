@@ -74,7 +74,7 @@ var imgList = [
     function _populate(imgObj, id) {
       var img = new Img(imgObj);
       id = 'img-' + id;
-      var tmpl = '<li class="image-container" id="' + id + ' " style="background-image: url(\'' + img.src + '\')" title="' + img.desc + '" draggable="true" ondragstart="dragStart(event)" ondragover="dragHandler(event)"  ondrop="dropHandler(event)"></li>';
+      var tmpl = '<li class="image-container" id="' + id + '" style="background-image: url(\'' + img.src + '\')" title="' + img.desc + '" draggable="true" ondragstart="dragStart(event)" ondragover="dragHandler(event)"  ondrop="dropHandler(event)"></li>';
 
       return tmpl;
     }
