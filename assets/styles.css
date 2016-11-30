@@ -1,0 +1,23 @@
+#gallery-container {
+  max-width: 1200px;
+  display: block;
+  margin: 20px auto;
+  list-style-type: none;
+  padding: 0; }
+  #gallery-container .image-container {
+    width: calc(100% / 3);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left; }
+    @media (max-width: 1100px) {
+      #gallery-container .image-container {
+        height: 200px; } }
+    @media (max-width: 700px) {
+      #gallery-container .image-container {
+        height: 150px; } }
+    @media (max-width: 500px) {
+      #gallery-container .image-container {
+        height: 100px; } }
+
+/*# sourceMappingURL=styles.css.map */
