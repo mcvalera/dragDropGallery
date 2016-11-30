@@ -1,5 +1,6 @@
 // uploaded images in assets/images folder for convenience
-// having the images within an array in the JSON is better because it allows you to at least predict the order in which the images will be in when parsed, although given my implementation right now the order doesn't really matter
+// having each images as an object in an array is the way to go because it allows you to at least predict the order in which the images will be parsed, although given the implementation below, it doesn't really matter
+
 var imgList = [
   {
     src: 'http://i68.tinypic.com/mbn5t1.jpg',
